@@ -19,5 +19,43 @@ html, body {
 .sidenav ul {
   color: #FFF;
 }
+.contents {
+  width: calc(100% - 22.5%);
+}
+.nav {
+  border-bottom: 1px #B39DDB;
+  margin-top: 2.5em;
+}
+.nav ul {
+  width: 60%;
+  margin: auto;
+  display: flex;  
+  justify-content: space-between;
+}
+.nav li {
+  opacity: 0.4;  
+}
+li:hover {
+  opacity: 1;
+}
+.project {
+  width: 65%;
+  min-height: 35%;
+  margin: auto;
+  margin-top: 5%;
+  box-shadow: 0 0 15px rgba(117, 117, 117, 0.2);
+}
+.project h1 {
+  color: #FFF;
+  font-size: 1.15em;
+  background-color: #999999;
+  padding: 0.5em;
+}
+.hline-bottom {
+  width: 40%;
+  margin: auto;  
+  margin-top: 5%;
+  border-bottom: 2px solid rgba(175, 175, 175, 0.2); /* whichever color you prefer */
+}
 
 
