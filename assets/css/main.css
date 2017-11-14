@@ -43,11 +43,11 @@ li:hover {
   min-height: 35%;
   margin: auto;
   margin-top: 5%;
-  box-shadow: 0 0 15px rgba(117, 117, 117, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 .project h1 {
   color: #FFF;
-  font-size: 1.15em;
+  font-size: 1em;
   background-color: #999999;
   padding: 0.5em;
 }
@@ -57,5 +57,3 @@ li:hover {
   margin-top: 5%;
   border-bottom: 2px solid rgba(175, 175, 175, 0.2); /* whichever color you prefer */
 }
-
-
