@@ -1,0 +1,17 @@
+<div class="project" ng-repeat="project in projects">
+  <h1>PROJECTS VIEW</h1>
+  <h1>{{ project.title }}</h1>
+  <p>{{ project.date }}</p>
+  <a href="{{ project.link }}">Website Link</a>
+  <!-- use an ng-repeat on descriptions array for each project -->
+  <p>{{ project.description[0] }}</p>
+  <p>{{ project.description[1] }}</p>
+  <p>{{ project.description[2] }}</p>
+  <p>{{ project.technologies }}</p>
+  <div class="site-gallery">
+      <img src="{{ project.images[0] }}" alt="">
+      <img src="{{ project.images[1] }}" alt="">
+      <img src="{{ project.images[2] }}" alt="">
+      <img src="{{ project.images[3] }}" alt="">
+  </div>
+</div>

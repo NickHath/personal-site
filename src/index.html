@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="personalSite">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nick Hathaway</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./main.css">  
+</head>
+<body>
+  <div class="wrapper">
+    <div class="sidenav">
+      <img src="./assets/img/me.jpg" alt="">
+      <h1>Nick Hathaway</h1>
+      <h2>Web Developer</h2>      
+      <ul>
+        <li><a ui-sref="about">About</a></li>
+        <li><a ui-sref="projects">Projects</a></li>
+        <li><a ui-sref="blog">Blog</a></li>
+        <li><a ui-sref="reading">Reading</a></li>
+      </ul>
+    </div>
+    <div class="contents">
+      <div class="nav">
+        <ul>
+          <li><a ui-sref="about">About</a></li>
+          <li><a ui-sref="projects">Projects</a></li>
+          <li><a ui-sref="blog">Blog</a></li>
+          <li><a ui-sref="reading">Reading</a></li>
+        </ul>
+      </div>
+      <ui-view></ui-view>
+    </div>
+  </div>
+
+  <!-- angular scripts -->
+
+  <!-- dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+  <!-- top-level scripts -->
+  <script src="./app/app.module.js"></script>
+  <script src="./app/app.routes.js"></script>
+  <!-- partials -->
+  <script src="./app/projects/projectsService.js"></script>  
+  <script src="./app/projects/projectsController.js"></script>
+</body>
+</html>

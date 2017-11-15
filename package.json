@@ -1,0 +1,10 @@
+{
+  "name": "personal-site",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "live-server ./src"
+  },
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
