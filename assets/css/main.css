@@ -54,6 +54,10 @@ li:hover {
   background-color: #999;
   padding: 0.5em;
 }
+.project p {
+  font-size: 16px;
+  margin-bottom: 1em;
+}
 .hline-bottom {
   width: 40%;
   margin: auto;  
@@ -72,4 +76,8 @@ li:hover {
   width: 250px;
   height: auto;
   margin: 0.3em;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
