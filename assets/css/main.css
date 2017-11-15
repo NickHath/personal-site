@@ -60,3 +60,16 @@ li:hover {
   margin-top: 5%;
   border-bottom: 2px solid rgba(175, 175, 175, 0.2); /* whichever color you prefer */
 }
+.site-gallery {
+  width: 700px;
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.site-gallery img {
+  width: 250px;
+  height: auto;
+  margin: 0.3em;
+}
