@@ -1,0 +1,32 @@
+/* anchor animated underline */
+.nav a {
+  position: relative;
+  color: #BA68C8;
+  text-decoration: none;
+  font-weight: 600;  
+}
+
+.nav a:hover {
+  color: #BA68C8;
+}
+
+.nav a:before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 3px;
+  bottom: 0;
+  left: 2.5%;
+  background-color: #BA68C8;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
