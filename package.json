@@ -5,6 +5,7 @@
     "dev": "live-server ./src"
   },
   "dependencies": {
+    "angular-sticky-plugin": "^0.4.2",
     "live-server": "^1.2.0"
   }
 }
