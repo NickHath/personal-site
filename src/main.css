@@ -30,7 +30,9 @@ a {
 p a {
   color: red;
 }
-
+i {
+  color: #BA68C8;
+}
 .headshot {
   width: 60%;
   height: auto;
@@ -59,7 +61,7 @@ header {
 
 
 /*  */
-img {
+main img {
   width: 400px;
   height: auto;
   box-shadow: 0 0 2.5px #757575;
