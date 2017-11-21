@@ -36,8 +36,14 @@ a {
 p a {
   color: red;
 }
+.socicons {
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+}
 i {
   color: #BA68C8;
+  font-size: 35px;
 }
 .headshot {
   width: 60%;
