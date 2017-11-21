@@ -1,1 +1,6 @@
-<h1>BLOG VIEW</h1>
+<div class="post" ng-repeat="post in posts">
+    <h1>{{ post.title }}</h1>
+    <h3>{{ post.date }}</h3>
+    <h3>{{ post.author }}</h3>
+    <p ng-repeat="para in post.body">{{ para }}</p>
+  </div>

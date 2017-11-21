@@ -5,24 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Nick Hathaway</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/114779/Socicon/style.css?u8vidh">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Spectral+SC:200,200i,300,300i,400,500,500i,700,800" rel="stylesheet">
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./main.css">  
 </head>
 <body>
   <div class="wrapper">
-    <div class="sidenav">
-      <img src="./assets/img/me.jpg" alt="">
+    <header>
+      <img class="headshot" src="./assets/img/me.jpg" alt="">
       <h1>Nick Hathaway</h1>
-      <h2>Web Developer</h2>      
-      <ul>
+      <h2>Full-Stack Web Developer</h2> 
+      <p>I enjoy learning new web development frameworks, reading narrative journalism, and watching performance art so experimental it probably wasn’t meant to be enjoyed in the first place.</p>     
+      <div class="socicons">
+        <i class="socicon-linkedin"></i>
+        <i class="socicon-github"></i>
+        <i class="socicon-facebook"></i>
+        <i class="socicon-mail"></i>
+      </div>
+      <ul class="sidenav">
         <li><a ui-sref="about">About</a></li>
         <li><a ui-sref="projects">Projects</a></li>
         <li><a ui-sref="blog">Blog</a></li>
         <li><a ui-sref="reading">Reading</a></li>
       </ul>
-    </div>
-    <div class="contents">
+    </header>
+    <main>
       <div class="nav">
         <ul>
           <li><a ui-sref="about">About</a></li>
@@ -31,8 +40,10 @@
           <li><a ui-sref="reading">Reading</a></li>
         </ul>
       </div>
-      <ui-view></ui-view>
-    </div>
+      <article>
+        <ui-view></ui-view>
+      </article>
+    </main>
   </div>
 
   <!-- angular scripts -->
@@ -46,5 +57,7 @@
   <!-- partials -->
   <script src="./app/projects/projectsService.js"></script>  
   <script src="./app/projects/projectsController.js"></script>
+  <script src="./app/blog/blogService.js"></script>  
+  <script src="./app/blog/blogController.js"></script>
 </body>
 </html>
