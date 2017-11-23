@@ -1,2 +1,9 @@
-<h1>READING VIEW</h1>
-<p>{{ readings }}</p>
+<div class="reading" ng-repeat="reading in readings | orderBy: 'time_added' : true">
+  <h1>{{ reading.resolved_title }}</h1>
+  <h3>{{ reading.time_added * 1000 | date:'MM-dd-yyyy' }}</h3>
+  <h3>Word Count: {{ reading.word_count }}</h3>
+  <p>{{ reading.excerpt }}</p>
+  <a target="_blank" href="{{ reading.resolved_url }}">{{ reading.resolved_url }}</a>
+</div>
+
+<!-- <iframe width="500" height="500" src="http://www.google.com"></iframe> -->

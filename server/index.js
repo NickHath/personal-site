@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express')
     , axios = require('axios')
+    , cors = require('cors')
     , app = express();
 
 // body and config for Pocket post request    
@@ -13,6 +14,8 @@ const config = {
     "Content-Type": "application/json"
   }
 }
+
+app.use(cors());
 
 app.get('/api/readings', (req, res) => {
   axios.post('https://getpocket.com/v3/get', body, config)

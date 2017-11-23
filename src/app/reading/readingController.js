@@ -1,7 +1,7 @@
 angular.module('personalSite').controller('readingController', function($scope, readingService) {
-  $scope.readings = '';
   readingService.getReadings().then(readings => {
-    console.log(readings);
-    $scope.readings = readings;
-  })
+    $scope.readings = readings.data.list;
+    $scope.readings = Object.values($scope.readings);
+    console.log(Object.values($scope.readings));
+  });
 })
