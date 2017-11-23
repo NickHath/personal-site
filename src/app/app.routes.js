@@ -14,7 +14,7 @@ angular.module('personalSite').config(function($stateProvider, $urlRouterProvide
     }).state('reading', {
       url: '/reading',
       templateUrl: 'app/reading/readingView.html',
-      controller: 'app/readingController'
+      controller: 'app/reading/readingController'
     }).state('contact', {
       url: '/contact', 
       templateUrl: 'app/contact/contactView.html'

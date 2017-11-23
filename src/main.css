@@ -1,10 +1,10 @@
 /* site wide styling */
  ::selection {
   /* background: rgba(186, 104, 200, 0.2);   */
-  background: rgba(244, 186, 255, 0.3);; 
+  background: rgba(244, 186, 255, 0.3);
  } 
  ::-moz-selection {
-  background: rgba(244, 186, 255, 0.3);;    
+  background: rgba(244, 186, 255, 0.3); 
   /* background: rgba(186, 104, 200, 0.2);   */
  }  
 html, body {

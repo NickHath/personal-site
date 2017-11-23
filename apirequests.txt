@@ -1,0 +1,2 @@
+// this post will return list of articles in the "To Read" section
+curl https://getpocket.com/v3/get --insecure -X POST -H "Content-Type: application/json" -H "X-Accept: application/json" -d "{\"consumer_key\":\"72426-5997d49f9f4638db74a19705\", \"access_token\":\"66a7e814-a99d-5376-775d-56303c\"}"

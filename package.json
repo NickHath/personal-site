@@ -1,10 +1,15 @@
 {
   "name": "personal-site",
   "version": "0.0.1",
+  "main": "server/index.js",
+  "proxy": "http://localhost:4500",
   "scripts": {
     "dev": "live-server ./src"
   },
   "dependencies": {
+    "axios": "^0.17.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
     "live-server": "^1.2.0"
   }
 }
