@@ -12,58 +12,35 @@ html, body {
 }
 h1 {
   @include headline-font;
-  margin-bottom: 0.1em;
 }
 h2 {
   @include secondary-headline-font;
 }
 h3 {
   @include byline-font;
-  margin-bottom: 0.35em;
 }
 p {
   line-height: 1.5;
-  margin-bottom: 2.5%;
 }
 a {
   @include anchor-font;
 }
-.socicons {
-  display: flex;
-  width: 75%;
-  justify-content: space-around;
-}
-i {
-  color: $focus-primary;
-  font-size: 35px;
+header {
+  border-bottom: 1px solid $line-color;
 }
 .headshot {
-  width: 70%;
+  width: 50%;
   height: auto;
   border-radius: 50%;
 }
-/* make flex-direction column when mobile!!! */
-.wrapper {
-  display: flex;
-  height: 100%;
-}
-header {
-  width: 35%;
-  height: 100%;
-  padding: 5% 2.5% 0 2.5%;
-  margin: 0 2.5% 0 2.5%;
-  border-right: 1px solid $line-color;
+i {
+  color: $focus-primary;
+  font-size: 3em;
 }
 main img {
-  width: 400px;
+  width: 100%;
   height: auto;
-  box-shadow: 0 0 2.5px #757575;
 }
 .nav {
-  width: 50%;
-}
-.nav ul {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.25em;
+  display: none;
 }

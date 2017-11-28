@@ -5,8 +5,8 @@
 /* font mix-ins */
 @mixin body-font {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.075em;
   font-weight: 300;
+  font-size: 1.075em;
   color: $primary-text;  
 }
 @mixin headline-font {
