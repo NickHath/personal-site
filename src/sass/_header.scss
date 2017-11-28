@@ -10,4 +10,9 @@ header {
     color: $focus-primary;
     font-size: 3em;
   }
+  @include media-query('tablet') {
+    border-bottom: none;
+    border-right: 1px solid $line-color;
+    // position: fixed;
+  }
 }
