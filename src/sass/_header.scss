@@ -1,0 +1,13 @@
+header {
+  grid-area: header;
+  border-bottom: 1px solid $line-color;
+  img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+  }
+  i {
+    color: $focus-primary;
+    font-size: 3em;
+  }
+}

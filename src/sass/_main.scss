@@ -1,46 +1,10 @@
-/* site-wide styling */
-::selection {
-  background: $focus-light-transparent;
- } 
- ::-moz-selection {
-  background: $focus-light-transparent; 
-}  
-html, body {
-  @include body-font;
-  width: 100%;
-  height: 100vh;
-}
-h1 {
-  @include headline-font;
-}
-h2 {
-  @include secondary-headline-font;
-}
-h3 {
-  @include byline-font;
-}
-p {
-  line-height: 1.5;
-}
-a {
-  @include anchor-font;
-}
-header {
-  border-bottom: 1px solid $line-color;
-}
-.headshot {
-  width: 50%;
-  height: auto;
-  border-radius: 50%;
-}
-i {
-  color: $focus-primary;
-  font-size: 3em;
-}
-main img {
-  width: 100%;
-  height: auto;
-}
-.nav {
-  display: none;
+main {
+  grid-area: main;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .nav {
+    display: none;
+  }
 }

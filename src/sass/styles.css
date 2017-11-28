@@ -1,10 +1,14 @@
 /* modules */
 /* background and fonts */
 /* color scheme */
+/* media query breakpoints */
 /* google fonts */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,600");
 @import url("https://fonts.googleapis.com/css?family=Spectral+SC:200,500");
 /* font mix-ins */
+/* media query */
+/* by default, will apply styling to provider $width and larger */
+/* encourages mobile first design */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -54,19 +58,21 @@ table {
 
 /* page layout */
 /* site-wide styling */
-::selection {
-  background: rgba(244, 186, 255, 0.3); }
-
-::-moz-selection {
-  background: rgba(244, 186, 255, 0.3); }
-
 html, body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
   font-size: 1.075em;
+  font-weight: 300;
   color: #424242;
   width: 100%;
   height: 100vh; }
+
+.wrapper {
+  display: grid;
+  grid-gap: 0;
+  grid-template-areas: "header" "main"; }
+  @media only screen and (min-width: 767px) {
+    .wrapper {
+      grid-template-areas: "header main"; } }
 
 h1 {
   font-family: 'Spectral SC', sans-serif;
@@ -75,9 +81,9 @@ h1 {
 
 h2 {
   font-family: 'Open Sans', sans-serif;
-  color: #ba68c8;
+  font-size: 1.5em;
   font-weight: 300;
-  font-size: 1.5em; }
+  color: #ba68c8; }
 
 h3 {
   font-family: 'Spectral SC', sans-serif;
@@ -92,21 +98,27 @@ a {
   color: #ba68c8;
   text-decoration: none; }
 
+::selection {
+  background: rgba(244, 186, 255, 0.3); }
+
+::-moz-selection {
+  background: rgba(244, 186, 255, 0.3); }
+
 header {
+  grid-area: header;
   border-bottom: 1px solid #eeeeee; }
+  header img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%; }
+  header i {
+    color: #ba68c8;
+    font-size: 3em; }
 
-.headshot {
-  width: 50%;
-  height: auto;
-  border-radius: 50%; }
-
-i {
-  color: #ba68c8;
-  font-size: 3em; }
-
-main img {
-  width: 100%;
-  height: auto; }
-
-.nav {
-  display: none; }
+main {
+  grid-area: main; }
+  main img {
+    width: 100%;
+    height: auto; }
+  main .nav {
+    display: none; }

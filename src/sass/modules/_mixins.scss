@@ -5,8 +5,8 @@
 /* font mix-ins */
 @mixin body-font {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
   font-size: 1.075em;
+  font-weight: 300;
   color: $primary-text;  
 }
 @mixin headline-font {
@@ -16,9 +16,9 @@
 }
 @mixin secondary-headline-font {
   font-family: 'Open Sans', sans-serif;
-  color: $focus-primary;
-  font-weight: 300;
   font-size: 1.5em;
+  font-weight: 300;
+  color: $focus-primary;
 }
 @mixin byline-font {
   font-family: 'Spectral SC', sans-serif;  
@@ -29,4 +29,16 @@
   font-weight: 600;
   color: $focus-primary;
   text-decoration: none;
+}
+
+/* media query */
+/* by default, will apply styling to provider $width and larger */
+/* encourages mobile first design */
+@mixin media-query($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+      $width: map_get($breakpoints, $width);
+      @media only screen and (#{$type}-width: $width - 1) {
+          @content;
+      }
+  }
 }
