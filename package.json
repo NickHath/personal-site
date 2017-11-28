@@ -2,14 +2,23 @@
   "name": "personal-site",
   "version": "0.0.1",
   "main": "server/index.js",
+  "build-css": "node-sass-chokidar src/ -o src/",
+  "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
   "scripts": {
-    "dev": "live-server ./src"
+    "dev": "live-server ./src",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start": "npm-run-all -p watch-css dev"
   },
   "dependencies": {
     "axios": "^0.17.1",
     "cors": "^2.8.4",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
-    "live-server": "^1.2.0"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "live-server": "^1.2.0",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2"
   }
 }

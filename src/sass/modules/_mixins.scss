@@ -1,0 +1,32 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+@import url('https://fonts.googleapis.com/css?family=Spectral+SC:200,500');
+
+/* font mix-ins */
+@mixin body-font {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.075em;
+  font-weight: 300;
+  color: $primary-text;  
+}
+@mixin headline-font {
+  font-family: 'Spectral SC', sans-serif;
+  font-size: 3em;
+  font-weight: 500;
+}
+@mixin secondary-headline-font {
+  font-family: 'Open Sans', sans-serif;
+  color: $focus-primary;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+@mixin byline-font {
+  font-family: 'Spectral SC', sans-serif;  
+  font-weight: 200;
+}
+@mixin anchor-font {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: $focus-primary;
+  text-decoration: none;
+}

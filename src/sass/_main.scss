@@ -1,45 +1,32 @@
-/* site wide styling */
- ::selection {
-  /* background: rgba(186, 104, 200, 0.2);   */
-  background: rgba(244, 186, 255, 0.3);
+/* site-wide styling */
+::selection {
+  background: $focus-light-transparent;
  } 
  ::-moz-selection {
-  background: rgba(244, 186, 255, 0.3); 
-  /* background: rgba(186, 104, 200, 0.2);   */
- }  
+  background: $focus-light-transparent; 
+}  
 html, body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.04em;
-  font-weight: 300;
+  @include body-font;
   width: 100%;
   height: 100vh;
-  color: #424242;
 }
 h1 {
-  font-family: 'Spectral SC', sans-serif;
-  font-size: 3em;
-  font-weight: 500;
+  @include headline-font;
   margin-bottom: 0.1em;
 }
 h2 {
-  color: #BA68C8;
-  font-weight: 300;
-  font-size: 1.5em;
+  @include secondary-headline-font;
 }
 h3 {
-  font-family: 'Spectral SC', sans-serif;  
-  font-weight: 200;
+  @include byline-font;
   margin-bottom: 0.35em;
-  font-size: 1em;
 }
 p {
   line-height: 1.5;
   margin-bottom: 2.5%;
 }
 a {
-  text-decoration: none;
-  color: #BA68C8;
-  font-weight: 600;
+  @include anchor-font;
 }
 .socicons {
   display: flex;
@@ -47,11 +34,11 @@ a {
   justify-content: space-around;
 }
 i {
-  color: #BA68C8;
+  color: $focus-primary;
   font-size: 35px;
 }
 .headshot {
-  width: 60%;
+  width: 70%;
   height: auto;
   border-radius: 50%;
 }
@@ -65,7 +52,7 @@ header {
   height: 100%;
   padding: 5% 2.5% 0 2.5%;
   margin: 0 2.5% 0 2.5%;
-  border-right: 1px solid #EEE;
+  border-right: 1px solid $line-color;
 }
 main img {
   width: 400px;
